@@ -4,13 +4,13 @@ $(document).ready(function(){
     alert("el correo fue en enviado correctamente")
    })
 
-   $("h1").dblclick(function(){
-      $(this).css({"color": "red"})
-    });
+   $("h1").on( "dblclick" , function(){
+    $(this).css({"color": "red"})
+  });
 
-    $("h2").click(function(){
-      $("section").toggle();
-    });
+  $('.card-title').click(function(){
+    $('.text-secundary').toggle();
+  });
   
   });
 
